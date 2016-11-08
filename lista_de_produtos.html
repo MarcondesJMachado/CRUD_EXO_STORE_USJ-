@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Clientes</title>
+        <meta name="autor"  content="Marcondes">
+        <meta name="description" content="exercicio">
+        <link rel="stylesheet" href="estilo.css">
+<body>
+<fieldset>
+ <legend>Dados do Cliente</legend>
+    <table class="tabelaEditavel">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <tr>
+                <td>001</td>
+                <td>Vassoura de Bruxa</td>
+                <td>Artigo festa_halloween</td>
+                <td>66666</td>
+                <td>666</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Galinha Preta Pra Macumba</td>
+                <td>Artigo Candomblé</td>
+                <td>67778</td>
+                <td>616</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Pomba Gira de Plástico</td>
+                <td>Objetos para rituais</td>
+                <td>77777</td>
+                <td>677</td>
+                <td>
+                    <input type="checkbox" name="selecionado">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<br>
+ <input class="btn_submit_novoCliente" type="submit" value="Novo Produto"> 
+ <input class="btn_submit_excluir" type="submit" value="Excluir Produto"> 
+  <input class="btn_submit_editar_cliente" type="submit" value="Editar Produto"> 
+</body>
+<style type="text/css">
+    * {
+    font-family:Verdana
+}
+.tabelaEditavel {
+    border:solid 1px;
+    width:100%
+}
+.tabelaEditavel td {
+    border:solid 1px;
+}
+.tabelaEditavel .celulaEmEdicao {
+    padding: 0;
+}
+.tabelaEditavel .celulaEmEdicao input[type=text]{
+    width:100%;
+    border:0;
+    background-color:rgb(255,253,210);  
+}
+ #formulario input.btn_novoCliente
+                                     {
+                                      position:absolute;
+                                      left:95px;
+                                      margin-top:80px;
+                                      width:100px;
+                                        border: 2px solid #000000;
+									  border-radius:5px;}
+ #formulario input.btn_excluir
+                                     {
+                                      position:absolute;
+                                      left:95px;
+                                      margin-top:80px;
+                                      width:100px;
+                                        border: 2px solid #000000;
+									  border-radius:5px;}	
+ #formulario input.btn_editar_cliente
+                                     {
+                                      position:absolute;
+                                      left:95px;
+                                      margin-top:80px;
+                                      width:100px;
+                                        border: 2px solid #000000;
+									  border-radius:5px;}										  
+									  
+</style>
+</html>
